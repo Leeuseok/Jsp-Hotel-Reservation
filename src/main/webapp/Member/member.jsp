@@ -49,9 +49,6 @@
 		</div>
 
 		<div class="button-container">
-			<!-- 				<button type="reset" class="btn btn-secondary">다시쓰기</button>
- -->
-			<a href="login.jsp" class="btn">로그인</a>
 			<button type="button" class="btn " onclick="inputCheck()">회원가입</button>
 
 		</div>

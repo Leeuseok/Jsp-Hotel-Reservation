@@ -74,7 +74,7 @@ if ("admin".equals(mem_id)) {
                id="roomLink"
                href="<%=request.getContextPath()%>/room/roomlist.jsp">Room</a></li>
             <li class="nav-item"><a class="nav-link text-dark"
-               id="reviewLink" href="<%=request.getContextPath()%>/review.jsp">Review</a>
+               id="reviewLink" href="<%=request.getContextPath()%>/review/reviews.jsp">Review</a>
             </li>
 
          </ul>

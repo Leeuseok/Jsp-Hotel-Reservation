@@ -27,7 +27,7 @@ public class MemberMgr {
 			/* 얻어진 pool로 Connection을 얻음. */
 			con = pool.getConnection();
 
-			sql = "select mem_id from Member where mem_id = ?";
+			sql = "select mem_id from member where mem_id = ?";
 			pstmt = con.prepareStatement(sql);
 			pstmt.setString(1, mem_id);
 
@@ -50,7 +50,7 @@ public class MemberMgr {
 		boolean flag = false;
 		try {
 			con = pool.getConnection();
-			sql = "insert Member(mem_id,mem_pw,mem_name, mem_phone, mem_addr, mem_birth" + ")values(?,?,?,?,?,?)";
+			sql = "insert member(mem_id,mem_pw,mem_name, mem_phone, mem_addr, mem_birth" + ")values(?,?,?,?,?,?)";
 			pstmt = con.prepareStatement(sql);
 			pstmt.setString(1, bean.getMem_id());
 			pstmt.setString(2, bean.getMem_pw());
@@ -77,7 +77,7 @@ public class MemberMgr {
 
 	    try {
 	        con = pool.getConnection();
-	        sql = "select idx from Member where mem_id = ? and mem_pw = ?";
+	        sql = "select idx from member where mem_id = ? and mem_pw = ?";
 	        pstmt = con.prepareStatement(sql);
 	        pstmt.setString(1, mem_id);
 	        pstmt.setString(2, mem_pw);
@@ -107,7 +107,7 @@ public class MemberMgr {
 
 		try {
 			con = pool.getConnection();
-			sql = "SELECT * FROM Member WHERE mem_id = ?";
+			sql = "SELECT * FROM member WHERE mem_id = ?";
 			pstmt = con.prepareStatement(sql);
 			pstmt.setString(1, mem_id);
 			rs = pstmt.executeQuery();
@@ -139,7 +139,7 @@ public class MemberMgr {
 
 		try {
 			con = pool.getConnection();
-			sql = "UPDATE Member SET mem_pw=?, mem_name=?, mem_phone=?, mem_addr=?, mem_birth=? WHERE mem_id=?";
+			sql = "UPDATE member SET mem_pw=?, mem_name=?, mem_phone=?, mem_addr=?, mem_birth=? WHERE mem_id=?";
 			pstmt = con.prepareStatement(sql);
 			pstmt.setString(1, bean.getMem_pw());
 			pstmt.setString(2, bean.getMem_name());
@@ -177,7 +177,7 @@ public class MemberMgr {
 
 		try {
 			con = pool.getConnection();
-			sql = "SELECT * FROM Member";
+			sql = "SELECT * FROM member";
 			pstmt = con.prepareStatement(sql);
 			rs = pstmt.executeQuery();
 
@@ -209,7 +209,7 @@ public class MemberMgr {
 
 		try {
 			con = pool.getConnection();
-			sql = "DELETE FROM Member WHERE mem_id=?";
+			sql = "DELETE FROM member WHERE mem_id=?";
 			pstmt = con.prepareStatement(sql);
 			pstmt.setString(1, mem_id);
 

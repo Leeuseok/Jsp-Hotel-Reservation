@@ -15,7 +15,6 @@
 
 </head>
 <body>
-	<jsp:include page="../header.jsp" />
 	<div class="centered-container">
 
 	<div class="check-container mt-5">
@@ -104,5 +103,4 @@
 	</div>
 	</div>
 </body>
-	<jsp:include page="../footer.jsp" />
 </html>

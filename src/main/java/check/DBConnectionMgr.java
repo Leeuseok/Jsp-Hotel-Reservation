@@ -42,7 +42,7 @@ import java.util.Vector;
 public class DBConnectionMgr {
     private Vector connections = new Vector(10);
     private String _driver = "com.mysql.cj.jdbc.Driver",
-    _url = "jdbc:mysql://127.0.0.1:3306/jsp_project?useUnicode=true&characterEncoding=utf-8",
+    _url = "jdbc:mysql://localhost:3306/jsp_project?useUnicode=true&characterEncoding=utf-8",
     _user = "root",
     _password = "1234";
     
