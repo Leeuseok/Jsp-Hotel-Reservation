@@ -14,6 +14,7 @@
 ## 프로젝트 개요
 JSP로 구현한 호텔 예약 시스템
 
+
 ## 화면 구성 및 작동과정
 ![main](https://github.com/ejeonghun/Jsp-Hotel-Reservation/assets/41509711/d7694a2a-02b9-495b-bee2-a46cac51bdfd)
 
@@ -27,3 +28,5 @@ JSP로 구현한 호텔 예약 시스템
 
 
 
+## 프로젝트 기간 
+11.23 ~ 12.1 
