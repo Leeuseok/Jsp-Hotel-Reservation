@@ -26,6 +26,8 @@ JSP로 구현한 호텔 예약 시스템
 
 ### [DB init파일](https://github.com/ejeonghun/Jsp-Hotel-Reservation/raw/main/init.sql)
 
+## 플로우차트
+![JSP 플로우차트 drawio](https://github.com/ejeonghun/Jsp-Hotel-Reservation/assets/41509711/11bab6b6-4629-4ace-bbc7-df78b89966b6)
 
 
 ## 프로젝트 기간 
