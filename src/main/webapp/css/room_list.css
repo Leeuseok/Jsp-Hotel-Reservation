@@ -1,0 +1,157 @@
+@charset "UTF-8";
+@import
+	url('https://fonts.googleapis.com/css2?family=YouTube+Sans:wght@400;500;600;700;800&display=swap')
+	;
+
+* {
+	font-family: 'YouTube Sans', sans-serif;
+}
+.card {
+	width: 80%;
+	margin: 100px auto;
+	box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+	border-radius: 0.375rem;
+	overflow: hidden;
+	transition: transform 0.3s;
+	box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+.card:hover {
+	transform: scale(1.02);
+	box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+.card img {
+	object-fit: cover;
+	height: 200px;
+	animation: fadeIn 1s ease-in;
+}
+.card .content {
+	padding: 20px;
+	border-left: 1px solid #e5e7eb;
+}
+
+.btn-danger {
+    background-color: #f54242;
+    border-color: #f54242;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.btn-danger:hover {
+    background-color: #f52020;
+    border-color: #f52020;
+}
+.flatpickr-calendar {
+	z-index: 99 !important;
+}
+
+.select-btn {
+	display: flex;
+	justify-content: center;
+    margin-bottom: 1em;
+}
+
+@media (max-width: 960px) {
+    .card {
+        flex-direction: column;
+        width: 100%;
+    }
+    
+}
+
+.calc_people_txt {
+margin: auto 0!important;
+margin-right: 1em;
+}
+
+#fade-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background: #ffffff;
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+}
+
+
+.rooms-section {
+	padding-top: 0;
+	padding-bottom: 80px;
+}
+.room-item {
+	margin-bottom: 30px;
+	transition: transform 0.3s, box-shadow 0.3s;
+	    
+}
+
+.room-item:hover{
+	transform: scale(1.05);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+.room-item img {
+	width: 100%;
+	height: 32%;
+}
+.room-item .ri-text {
+	border: 1px solid #ebebeb;
+	border-top: none;
+	padding: 24px 24px 30px 28px;
+}
+.room-item .ri-text h4 {
+	color: #19191a;
+	margin-bottom: 17px;
+}
+.room-item .ri-text h3 {
+	color: #dfa974;
+	font-weight: 700;
+	margin-bottom: 14px;
+}
+.room-item .ri-text h3 span {
+	font-family: "Cabin", sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+	color: #19191a;
+}
+.room-item .ri-text table {
+	margin-bottom: 18px;
+}
+.room-item .ri-text table tbody tr td {
+	font-size: 16px;
+	color: #707079;
+	line-height: 36px;
+}
+.room-item .ri-text table tbody tr td.r-o {
+	width: 125px;
+}
+.room-item .ri-text .primary-btn {
+	color: #19191a;
+}
+.room-pagination {
+	text-align: center;
+	padding-top: 20px;
+}
+.room-pagination a {
+	font-size: 16px;
+	color: #707079;
+	border: 1px solid #EFD4B9;
+	border-radius: 2px;
+	padding: 7px 13px 5px;
+	margin-right: 7px;
+	display: inline-block;
+	-webkit-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+.room-pagination a:last-child {
+	margin-right: 0;
+}
+.room-pagination a:hover {
+	background: #dfa974;
+	color: #ffffff;
+}

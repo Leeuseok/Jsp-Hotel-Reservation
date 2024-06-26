@@ -1,0 +1,119 @@
+@charset "EUC-KR";
+@import url('https://fonts.googleapis.com/css2?family=YouTube+Sans:wght@400;500;600;700;800&display=swap');
+
+* {
+	font-family: 'YouTube Sans', sans-serif;
+}
+
+.carousel {
+	margin-top: 2vh;
+	margin: 0 auto;
+	overflow: hidden;
+	justify-content: center;
+	display: flex;
+}
+
+.carousel__item {
+	width: 80%;
+	height: auto;
+	display: none;
+	border-radius: 10px;
+	border: 1px solid #ccc;
+	transition: opacity 0.5s ease-in-out;
+}
+
+.carousel__item--visible {
+	display: block;
+	opacity: 1;
+}
+
+.carousel__item:not(.carousel__item--visible) {
+	opacity: 0;
+}
+
+.grid-details {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+	gap: 1rem;
+}
+
+.grid-details img {
+	height: 57px;
+}
+
+.grid-info {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 2rem;
+}
+
+.icon_div {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.grid-info p {
+	font-size: 20px;
+	margin-bottom: 10px;
+}
+
+.guide_txt {
+	margin-top: 30px;
+	padding: 25px 28px;
+	background: #f8f8f8;
+	flex-basis: 100%;
+}
+
+.guide_txt ul li {
+	display: flex;
+	align-items: center;
+	margin-bottom: 4px;
+	font-size: 15px;
+}
+
+.flatpickr-calendar {
+	z-index: 99 !important;
+}
+
+.img-fluid {
+	width: 35px;
+	height: 35px;
+}
+.grid-details {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+/* Styles for screens with a maximum width of 767px (mobile) */
+@media (max-width: 767px) {
+    .grid-details {
+        grid-template-columns: repeat(3, 1fr); /* 3 columns on mobile */
+    }
+}
+
+/* Styles for screens with a minimum width of 768px (tablet and above) */
+@media (min-width: 768px) {
+    .grid-details {
+        grid-template-columns: repeat(6, 1fr); /* 6 columns on tablet and above */
+    }
+}
+
+.room_guide {
+	background-color: #efefef;
+	padding:10px;
+}
+
+#fade-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background: #ffffff;
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+}

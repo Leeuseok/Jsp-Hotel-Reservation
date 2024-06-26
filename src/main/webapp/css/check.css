@@ -1,0 +1,61 @@
+@charset "UTF-8";
+.check-container {
+  margin-top: 5rem;
+  max-width: 600px; /* Adjust the max-width as needed */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.check-card {
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+}
+
+.check-card-header {
+  background-color: #f8f9fa;
+  padding: 1rem;
+}
+
+.check-card-body {
+  padding: 1rem;
+}
+
+.check-table-container {
+  margin-top: 2rem;
+}
+
+.check-table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.check-table th,
+.check-table td {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  text-align: right;
+}
+
+.check-table th {
+  background-color: #f8f9fa;
+  text-align: center;
+}
+
+.check-button-container {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.check-confirm-button {
+  background-color: black;
+  color: #fff;
+  border: 0;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+.check-confirm-button:hover {
+  background-color: #0069d9;
+}

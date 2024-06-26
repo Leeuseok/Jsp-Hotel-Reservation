@@ -1,0 +1,34 @@
+/* login.css */
+
+body {
+    background-color: #f8f9fa;
+    margin: 0;
+}
+
+.login-container {
+    width: 400px !important;
+    margin-top: 100px !important;
+    margin-bottom: 100px !important;
+    padding: 20px;
+    border: 1px solid #ced4da;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.login-title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.login-btn {
+    width: 100%;
+    margin-top: 10px;
+    border: 1px solid #ced4da !important;
+}
+
+.signup-link {
+    text-align: center;
+    margin-top: 20px;
+    border: 1px solid #ced4da !important;
+}

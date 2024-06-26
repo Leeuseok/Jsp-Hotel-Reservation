@@ -1,0 +1,46 @@
+.member-title {
+	text-align: center;
+	margin-bottom: 20px;
+}
+.centered-group {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px; /* 예시: 내부 여백 추가 */
+}
+
+.centered-group .form-group.reg {
+    width: 300px;
+    margin: 0 auto 10px;
+    display: flex;
+    flex-direction: row; /* 가로로 나열 */
+    align-items: center; /* 수직 가운데 정렬 */
+}
+
+.form-group.reg input[type="text"],
+.form-group.reg input[type="password"] {
+    width: 300px;
+    padding: 10px;
+    box-sizing: border-box;
+    height: 40px;
+}
+
+.centered-group .form-group.reg .btn-custom {
+    margin-left: 7px; /* 버튼을 왼쪽으로 10px 이동 */
+    margin-top: 5px; /* 버튼의 상단 마진을 0으로 설정 */
+    padding: 10px 9px; /* 버튼의 크기 조절 */
+}
+
+.button-container {
+    text-align: center;
+    margin-left: 240px; /* 오른쪽 여백 추가 */
+
+}
+
+.btn-primary,
+.btn-secondary,
+.btn-link {
+    margin: 5px;
+}
+

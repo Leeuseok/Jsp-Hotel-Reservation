@@ -1,0 +1,13 @@
+/* styles.css */
+
+.footer {
+    background-color: #fff !important;
+}
+
+.footer .text-light, .footer a, .footer p {
+    color: #000 !important;
+}
+
+.footer i.fab, .footer i.far {
+    font-size: 1em;  /* 아이콘 크기 조절 */
+}

@@ -105,7 +105,65 @@ public class RoomMgr {
 		}
 		return vinfo;
 	}
+	
 
-    
-    
+	public boolean updateRoom(RoomBean room) {
+	    Connection conn = null;
+	    PreparedStatement pstmt = null;
+	    boolean isUpdated = false;
+
+	    try {
+	        conn = pool.getConnection();
+
+	        String sql = "UPDATE room SET room_title=?, room_people=?, room_detail=?, room_area=?, room_guide=?, room_map=?, room_price=?, room_num=? WHERE room_idx=?";
+	        pstmt = conn.prepareStatement(sql);
+	        pstmt.setString(1, room.getRoom_title());
+	        pstmt.setInt(2, room.getRoom_people());
+	        pstmt.setString(3, room.getRoom_detail());
+	        pstmt.setString(4, room.getRoom_area());
+	        pstmt.setString(5, room.getRoom_guide());
+	        pstmt.setString(6, room.getRoom_map());
+	        pstmt.setInt(7, room.getRoom_price());
+	        pstmt.setInt(8, room.getRoom_num());
+	        pstmt.setInt(9, room.getRoom_idx());
+
+	        if (pstmt.executeUpdate() > 0) {
+	            isUpdated = true;
+	        }
+	    } catch (Exception e) {
+	        e.printStackTrace();
+	    } finally {
+	        pool.freeConnection(conn, pstmt);
+	    }
+
+	    return isUpdated;
+	}
+
+	public boolean deleteRoom(RoomBean room) {
+	    Connection conn = null;
+	    PreparedStatement pstmt = null;
+	    boolean isDeleted = false;
+
+	    try {
+	        conn = pool.getConnection();
+
+	        String sql = "DELETE FROM ROOM WHERE room_idx=?";
+	        pstmt = conn.prepareStatement(sql);
+	        pstmt.setInt(1, room.getRoom_idx());
+
+	        if (pstmt.executeUpdate() > 0) {
+	        	isDeleted = true;
+	        }
+	    } catch (Exception e) {
+	        e.printStackTrace();
+	    } finally {
+	        pool.freeConnection(conn, pstmt);
+	    }
+
+	    return isDeleted;
+	}
+	
+	public boolean adminchk(String mem_id) { // 어드민 확인
+	    return mem_id.equals("admin");
+	}
  }
