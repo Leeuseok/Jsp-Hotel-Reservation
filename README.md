@@ -1,11 +1,11 @@
 # JSP Hotel Reservation
 ## Stack
-- Apache Tomcat 10.1
-- Mysql 8.0.29
-- Eclipse IDE
-- Docker
+<img src="https://img.shields.io/badge/apache%20tomcat-%23F8DC75.svg?style=for-the-badge&logo=apache-tomcat&logoColor=black">
+<img src="https://img.shields.io/badge/mysql-4479A1.svg?style=for-the-badge&logo=mysql&logoColor=white">
+<img src="https://img.shields.io/badge/Eclipse-FE7A16.svg?style=for-the-badge&logo=Eclipse&logoColor=white">
+<img src="https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white">
+<img src="https://img.shields.io/badge/Cloudflare-F38020?style=for-the-badge&logo=Cloudflare&logoColor=white">
 - Nginx Proxy Manager(리버스 프록시 서버)
-- Cloudflare(DNS 및 도메인 연결)
 
 ## 팀원 소개
 **MaNolja**
