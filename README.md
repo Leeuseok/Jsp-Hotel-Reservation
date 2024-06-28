@@ -29,6 +29,7 @@ JSP로 구현한 호텔 예약 시스템
 ## 플로우차트
 ![JSP 플로우차트 drawio](https://github.com/ejeonghun/Jsp-Hotel-Reservation/assets/41509711/11bab6b6-4629-4ace-bbc7-df78b89966b6)
 
+## [PPT](https://github.com/user-attachments/files/16024184/MaNolja.pptx)
 
 ## 프로젝트 기간 
 11.23 ~ 12.1 
